@@ -92,6 +92,37 @@
             flex-wrap: wrap;
             margin-top: 30px;
         }
+        .btn-about, .btn-dev {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.247);
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 34, 34, 0.623);
+    backdrop-filter: blur(5px);
+    min-width: 80px;
+    max-width: 80px;
+    height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.btn-about {
+    background-color: rgba(255, 0, 0, 0.349);
+}
+
+.btn-dev {
+    background-color: rgba(255, 0, 0, 0.349);
+}
+
 
         .btn {
             padding: 0.8rem 1.5rem;
@@ -126,6 +157,19 @@
 
         .pump:hover {
             background-color: rgba(255, 107, 107, 0.7);
+        }
+        .btn-dev:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-about:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.4);
         }
 
         .bitcoin-price {
@@ -294,8 +338,8 @@
     <div class="container">
         <!-- Buttons Positioned in the Top-Right Corner -->
         <div class="top-buttons">
-            <button id="about-btn" class="btn">About</button>
-            <button id="contact-btn" class="btn">theDev</button>
+            <button id="about-btn" class="btn-about">About</button>
+            <button id="contact-btn" class="btn-dev">Dev</button>
         </div>
 
         <!-- Community Banner and Content -->
